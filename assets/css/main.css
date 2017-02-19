@@ -3894,6 +3894,16 @@
 		background-size: 100% 100%;
 	}
 
+  #intro #mark {
+    width: 3em;
+  }
+
+  @media (min-width: 48em) {
+    #intro #mark {
+      width: 5em;
+    }
+  }
+
 		#intro p {
 			font-size: 1.25em;
 		}
