@@ -3904,6 +3904,28 @@
     }
   }
 
+  #intro span {
+    position: relative;
+  }
+
+  #intro span::after {
+    bottom: -12px;
+    color: #fff;
+    content: "\00ae";     
+    left: 30px;
+    position: absolute;
+  }
+
+  @media (min-width: 48em) {
+    #intro span::after {
+      bottom: -12px;
+      color: #fff;
+      content: "\00ae";     
+      left: 55px;
+      position: absolute;
+    }
+  }
+
 		#intro p {
 			font-size: 1.25em;
 		}
