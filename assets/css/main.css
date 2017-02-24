@@ -2886,6 +2886,10 @@
 		text-align: center;
 	}
 
+  header a {
+    border-bottom: none;
+  }
+
 	header p {
 		color: rgba(255, 255, 255, 0.35);
 		position: relative;
@@ -3894,12 +3898,14 @@
 		background-size: 100% 100%;
 	}
 
-  #intro #mark {
+  #intro #mark,
+  header #mark {
     width: 3em;
   }
 
   @media (min-width: 48em) {
-    #intro #mark {
+    #intro #mark,
+    header #mark {
       width: 5em;
     }
   }
