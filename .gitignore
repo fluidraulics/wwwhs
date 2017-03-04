@@ -5,4 +5,5 @@ public
 test
 
 .travis.yml
+.env
 license.txt
