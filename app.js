@@ -40,6 +40,13 @@ module.exports = {
           }
         },
         {
+          name: 'vendorspage',
+          id: 'page',
+          filters: {
+            'sys.id': '2yAJhG8bLKWOa4Q0mcC2sS'
+          }
+        },
+        {
           name: 'about',
           id: 'page',
           filters: {
