@@ -92,7 +92,7 @@
 							<p>fluidraulics’ normal office hours are Monday - Friday 8:00 am - 5:00 pm EST.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form name="contact" method="post" action="/" netlify netlify-honeypot="bot-field">
 										<div class="field half first">
 											<label for="name">Name</label>
 											<input type="text" name="name" id="name" />
@@ -101,12 +101,15 @@
 											<label for="email">Email</label>
 											<input type="text" name="email" id="email" />
 										</div>
+										<div class="field half bot">
+											<input type="text" name="bot-field" />
+										</div>
 										<div class="field">
-											<labcontentful.index[0].meta.fields.seoTitleel for="message">Message</label>
+											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="5"></textarea>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><button type="submit" class="button submit">Send Message</a></li>
 										</ul>
 									</form>
 								</section>

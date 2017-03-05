@@ -2294,6 +2294,10 @@
 		margin: 0 0 2em 0;
 	}
 
+  form .bot {
+    display: none;
+  }
+
 		form .field {
 			margin: 0 0 1em 0;
 		}
