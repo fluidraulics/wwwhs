@@ -2057,6 +2057,10 @@
 		margin: 0 0 2em 0;
 	}
 
+  .features section span:not(:last-child):after {
+    content: ',';
+  }
+
 		.features section {
 			padding: 3.5em 3em 1em 7em ;
 			width: 50%;
