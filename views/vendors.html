@@ -35,7 +35,7 @@
 							<div class="features">
                 <each loop="vendor of contentful.vendors">
                   <section>
-                    <h3>{{ vendor.fields.title }}</h3>
+                    <h3><a href="vendors/{{ _.slugify(vendor.fields.title) }}">{{ vendor.fields.title }}</a></h3>
                     <each loop="pt of vendor.fields.productType">
                       <if condition="pt.fields.title">
                         <span>{{ pt.fields.title }}</span>

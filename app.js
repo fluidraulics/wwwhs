@@ -86,6 +86,10 @@ module.exports = {
           id: 'vendor',
           filters: {
             order: 'fields.title'
+          },
+          template: {
+            path: 'views/layouts/vendor.html',
+            output: (vendor) => { return `vendors/${_.slugify(vendor.fields.title)}.html` }
           }
         }
       ],
