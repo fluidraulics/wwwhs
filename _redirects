@@ -1,0 +1,17 @@
+# DNN 301 redirects
+
+/product-library.aspx /vendors
+
+/contact.aspx /#contact
+
+/about.aspx /#about
+
+# /sales-call.aspx /sales
+
+# TODO: create actual vendor to vendor redirects
+
+/product-library/* /vendors
+
+# Custom 404s
+
+# /credit.aspx /credit 404

@@ -11,7 +11,7 @@ const locals = {}
 module.exports = {
   devtool: 'source-map',
   vendor: 'assets/**',
-  ignore: ['**/readme.md', '**/license.txt', '**/layouts/*', '**/includes/*', '**/_*', '**/.*'],
+  ignore: ['**/readme.md', '**/license.txt', '**/layouts/*', '**/includes/*', '**/.*'],
   reshape: (ctx) => {
     return htmlStandards({
       parser: false,
