@@ -3285,7 +3285,7 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #742f5b;
+			background-color: #495057;
 		}
 
 		.wrapper.style3-alt {
@@ -3396,7 +3396,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #5052b5;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
