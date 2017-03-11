@@ -3468,7 +3468,6 @@
 
 			#header {
 				display: block;
-				padding: 0 2em;
 				text-align: left;
 			}
 
@@ -3911,8 +3910,12 @@
 		background-size: 100% 100%;
 	}
 
-  #intro #mark,
+  #intro #mark {
+    width: 3em;
+  }
+
   header #mark {
+    margin-left: 6vw;
     width: 3em;
   }
 
