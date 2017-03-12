@@ -3910,6 +3910,30 @@
 		background-size: 100% 100%;
 	}
 
+  #intro .inner {
+    position: relative;
+  }
+
+  #intro h2 {
+    display: inline;
+    position: absolute;
+    margin-left: 10px;
+    top: 67px;
+  }
+
+  @media (min-width: 736px) {
+    #intro h2 {
+      margin-left: 15px;
+      top: 76px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    #intro h2 {
+      top: 111px;
+    }
+  }
+
   #intro #mark {
     width: 3em;
   }
@@ -3919,7 +3943,7 @@
     width: 3em;
   }
 
-  @media (min-width: 48em) {
+  @media (min-width: 1280px) {
     #intro #mark,
     header #mark {
       width: 5em;
@@ -3930,26 +3954,29 @@
     position: relative;
   }
 
-  #intro span::after {
-    bottom: -12px;
+  #intro span::before {
+    bottom: 20px;
     color: #fff;
-    content: "\00ae";     
-    left: 30px;
+    content: "\00ae";
+    left: -8px;
+    font-size: 11px;
     position: absolute;
   }
 
-  @media (min-width: 48em) {
-    #intro span::after {
-      bottom: -12px;
+  @media (min-width: 1280px) {
+    #intro span::before {
+      bottom: 30px;
       color: #fff;
-      content: "\00ae";     
-      left: 55px;
+      content: "\00ae";
+      left: -8px;
+      font-size: 15px;
       position: absolute;
     }
   }
 
 		#intro p {
 			font-size: 1.25em;
+      margin-top: 2em;
 		}
 
 			@media screen and (max-width: 980px) {
