@@ -3934,6 +3934,12 @@
     }
   }
 
+  @media (min-width: 1680px) {
+    #intro h2 {
+      top: 165px;
+    }
+  }
+
   #intro #mark {
     width: 3em;
   }
