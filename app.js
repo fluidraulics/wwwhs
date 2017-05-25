@@ -1,9 +1,10 @@
 require('dotenv').config({ silent: true })
 
 const _ = require('lodash-addons')
-const htmlStandards = require('spike-html-standards')
+const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
-const latest = require('babel-preset-latest')
+const jsStandards = require('babel-preset-env')
+const dynamicImport = require('babel-plugin-syntax-dynamic-import')
 const Contentful = require('spike-contentful')
 const marked = require('marked')
 const locals = {}
@@ -12,20 +13,15 @@ module.exports = {
   devtool: 'source-map',
   vendor: 'assets/**',
   ignore: ['**/readme.md', '**/license.txt', '**/layouts/*', '**/includes/*', '**/.*'],
-  reshape: (ctx) => {
-    return htmlStandards({
+  reshape: htmlStandards({
       parser: false,
-      webpack: ctx,
       locals: Object.assign(
         locals,
         { marked: marked },
         { _: _})
-    })
-  },
-  postcss: (ctx) => {
-    return cssStandards({ parser: false, webpack: ctx })
-  },
-  babel: { presets: [latest] },
+  }),
+  postcss: cssStandards({ parser: false }),
+  babel: { presets: [[jsStandards, { modules: false }]], plugins: [dynamicImport] },
   plugins: [
     new Contentful({
       addDataTo: locals,
