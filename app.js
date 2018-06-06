@@ -12,7 +12,7 @@ const locals = {}
 module.exports = {
   devtool: 'source-map',
   vendor: 'assets/**',
-  ignore: ['**/readme.md', '**/license.txt', '**/layouts/*', '**/includes/*', '**/.*'],
+  ignore: ['**/readme.md', '**/license.txt', '**/includes/*', '**/.*'],
   reshape: htmlStandards({
       parser: false,
       locals: Object.assign(
