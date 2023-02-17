@@ -4068,9 +4068,9 @@ is-typedarray@~1.0.0:
   integrity sha512-cyA56iCMHAh5CdzjJIa4aohJyeO1YbwLi3Jc35MmRU6poroFjIGZzUzupGiRPOjgHg9TLu43xbpwXk523fMxKA==
 
 is-url@^1.2.1:
-  version "1.2.2"
-  resolved "https://registry.npmjs.org/is-url/-/is-url-1.2.2.tgz"
-  integrity sha512-00QghlPl39UAMLrkxCdJSLeaMT5Y9LYmi2ZgS3HEcKFjeDHEqUY6x1Zv/Sp+TvyNSf424GvdC9lep/PIcprBDQ==
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/is-url/-/is-url-1.2.4.tgz#04a4df46d28c4cff3d73d01ff06abeb318a1aa52"
+  integrity sha512-ITvGim8FhRiYe4IQ5uHSkj7pVaPDrCTkNd3yq3cV7iZAcJdHTUMPMEHcqSOy9xZ9qFenQCvi+2wjH9a1nXqHww==
 
 is-utf8@^0.2.0, is-utf8@^0.2.1:
   version "0.2.1"
